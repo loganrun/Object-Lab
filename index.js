@@ -60,3 +60,21 @@ class Adventurer extends Character {
       this.inventory.push("sword", "potion", "artifact");
     }
   }
+
+  class Robin extends Adventurer{
+    constructor (name, role) {
+      super(name, role);
+    }
+  }
+  
+  class Leo extends Companion{
+    constructor (name, role) {
+      super(name, role);
+    }
+  }
+  
+  class Frank extends Companion{
+    constructor (name, role) {
+      super(name, role);
+    }
+  }
