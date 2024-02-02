@@ -29,6 +29,7 @@ class Character {
     this.health = 100;
     this.inventory = [];
     }
+    static MAX_HEALTH = 100;
 }
 
 const robin = new Character("Robin");
@@ -47,6 +48,8 @@ class Adventurer extends Character {
       this.role = role;
       this.inventory.push("bedroll", "50 gold coins");
     }
+    static ROLES = ["fighter", "Healer","Wizard"]
+    
     scout () {
       console.log(`${this.name} is scouting ahead...`);
       super.roll();
